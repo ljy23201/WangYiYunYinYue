@@ -50,5 +50,7 @@ while url != 'javascript:void(0)':
     #定位'下一页'的url
     url = driver.find_element_by_css_selector("a.zbtn.znxt").\
         get_attribute('href')
-csv_file.close() #关闭文件。文件关闭后不能再进行读写操作
-driver.quit() #关闭浏览器并退出驱动程序
+#关闭文件。文件关闭后不能再进行读写操作
+csv_file.close()
+#关闭浏览器并退出驱动程序
+driver.quit()
